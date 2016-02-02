@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/eee"
+              android:id="@+id/login">
+    <!--header-->
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:id="@+id/wrap_header"
+                    android:layout_height="wrap_content">
+        <LinearLayout style="@style/detail_header">
+            <TextView style="@style/header_text" android:text="@string/login"/>
+        </LinearLayout>
+        <Button android:text="@string/forget"
+                android:id="@+id/forget"
+                style="@style/button_small"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <!--wrap-->
+    <LinearLayout style="@style/container" android:layout_below="@id/wrap_header" android:paddingTop="10dp">
+        <RelativeLayout android:id="@+id/login_wrap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="30dp">
+                <EditText android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="#999"
+                          android:hint="@string/phone"
+                          android:id="@+id/phone"
+                          android:background="@drawable/input_primary"
+                          android:cursorVisible="true"
+                          android:textColorHint="@color/eee"
+                          android:maxLength="11"
+                          android:inputType="phone"
+                          android:layout_marginBottom="10dp"
+                          android:textSize="20dp"/>
+                <EditText android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="#999"
+                          android:password="true"
+                          android:id="@+id/password"
+                          android:hint="@string/password"
+                          android:background="@drawable/input_primary"
+                          android:cursorVisible="true"
+                          android:textColorHint="@color/eee"
+                          android:maxLength="20"
+                          android:layout_marginBottom="10dp"
+                          android:inputType="textPassword"
+                          android:textSize="20dp"/>
+                <Button android:id="@+id/ok"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ok"
+                        android:padding="12dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/btn_bg"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!--progressbar-->
+    <LinearLayout android:layout_width="fill_parent"
+                  android:visibility="invisible"
+                  android:id="@+id/progressBar"
+                  android:layout_marginTop="50dp"
+                  android:layout_below="@id/wrap_header"
+                  android:gravity="center"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:layout_width= "40dp"
+                      android:gravity="center"
+                      android:layout_gravity="center_horizontal"
+                      android:background="@drawable/white_circle"
+                      android:layout_height="40dp">
+            <com.example.myapp.CircularProgress android:layout_width="20dp"
+                                                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

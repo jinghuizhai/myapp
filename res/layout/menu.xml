@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_alignParentLeft="true"
+                  android:id="@+id/menu"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical">
+        <!--header-->
+        <LinearLayout android:layout_width="fill_parent"
+                      android:background="@color/blue"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:layout_height="100dp">
+            <TextView style="@style/list_icon"
+                      android:textColor="@color/light_gray"
+                      android:text="@string/icon_company"
+                      android:textSize="30dp"
+                      android:id="@+id/menu_company"/>
+            <TextView android:layout_width="wrap_content"
+                      android:textSize="20dp"
+                      android:textColor="@color/white"
+                      android:layout_gravity="center"
+                      android:id="@+id/company"
+                      android:text="登录后显示公司名"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <!--linear list-->
+        <LinearLayout style="@style/linear_list">
+            <LinearLayout style="@style/linear_single" android:id="@+id/list_home" android:background="@color/light_gray">
+                <TextView style="@style/list_icon" android:textColor="@color/blue" android:text="@string/icon_home" android:id="@+id/menu_home"/>
+                <TextView android:text="首页"  style="@style/list_detail"/>
+            </LinearLayout>
+            <LinearLayout style="@style/linear_single" android:id="@+id/list_edit">
+                <TextView style="@style/list_icon" android:textColor="@color/blue" android:text="@string/icon_edit" android:id="@+id/menu_edit"/>
+                <TextView android:text="修改密码"  style="@style/list_detail"/>
+            </LinearLayout>
+            <LinearLayout style="@style/linear_single" android:id="@+id/list_version">
+                <TextView style="@style/list_icon" android:textColor="@color/blue" android:text="@string/icon_success" android:id="@+id/menu_version"/>
+                <TextView android:text="当前版本号:1.0"  style="@style/list_detail"/>
+            </LinearLayout>
+            <LinearLayout style="@style/linear_single" android:id="@+id/list_logout">
+                <TextView style="@style/list_icon" android:textColor="@color/blue" android:text="@string/icon_logout" android:id="@+id/menu_logout"/>
+                <TextView android:text="登出"  style="@style/list_detail"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

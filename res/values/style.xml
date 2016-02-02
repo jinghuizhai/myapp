@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+    <style name="tab_bottom_btn" >
+        <item name="android:background">@color/light_gray</item>
+    </style>
+    <style name="detail_header">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="detail_header_back">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:text">@string/icon_back</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="btn_back">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:text">@string/icon_back</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="header_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="detail_header_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">-56dp</item>
+        <item name="android:layout_weight">15</item>
+    </style>
+    <style name="linear_list">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/eee</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="linear_single">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="list_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="list_detail">
+        <item name="android:textSize">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="container">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:scrollbarSize">5dp</item>
+        <item name="android:orientation">vertical</item>
+        <!--<item name="android:background">@drawable/radius</item>-->
+    </style>
+    <style name="input_primary">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">#999</item>
+        <item name="android:background">@drawable/input_primary</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textColorHint">@color/eee</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="button_primary">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="button_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <!--<item name="android:background">@drawable/border</item>-->
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="li">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@drawable/divider</item>
+    </style>
+    <style name="li_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left|center</item>
+        <!--<item name="android:background">@drawable/border</item>-->
+    </style>
+    <drawable name="clr_normal">@color/blue</drawable>
+    <drawable name="clr_pressed">@color/gray</drawable>
+</resources>

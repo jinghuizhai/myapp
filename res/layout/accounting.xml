@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:id="@+id/accounting"
+              android:layout_height="match_parent">
+    <!--emplyee-->
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:id="@+id/employee_wrap" android:gravity="center" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="80dp"
+                      android:background="@drawable/circle_bg_lightblue"
+                      android:layout_height="80dp"
+                      android:gravity="center"
+                      android:orientation="vertical">
+            <TextView android:textColor="@color/blue"
+                      android:textSize="20dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/employee"
+                      android:gravity="center"
+                      android:layout_width="wrap_content"
+                      />
+            <TextView android:textColor="@color/gray"
+                      android:textSize="10dp"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/phone"
+                      android:gravity="center"
+                      android:layout_width="wrap_content"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_below="@id/employee_wrap"
+                  android:orientation="vertical" android:layout_height="fill_parent">
+        <!--<include layout="@layout/progress_accouting"/>-->
+        <LinearLayout android:visibility="invisible" android:id="@+id/deadline_wrap"
+                      android:layout_width="fill_parent"
+                      android:layout_marginTop="10dp"
+                      android:orientation="vertical" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="fill_parent"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent"
+                          android:gravity="center"
+                          android:text="还能使用"
+                          android:textColor="@color/gray"
+                          android:textSize="20dp"
+                          android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="horizontal" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content"
+                              android:id="@+id/diff"
+                              android:textSize="40dp"
+                              android:textColor="@color/blue"
+                              android:layout_height="wrap_content"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="天"
+                              android:textColor="@color/light_gray"
+                              android:textSize="40dp"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:layout_width="wrap_content"
+                    android:text="更多记录"
+                    android:visibility="invisible"
+                    android:background="@color/light_gray"
+                    android:textColor="@color/gray"
+                    android:id="@+id/more_record"
+                    android:textSize="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/progressBar"
+                  android:layout_marginTop="-50dp"
+                  android:layout_alignParentTop="true"
+                  android:gravity="center" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width= "40dp"
+                      android:gravity="center"
+                      android:layout_gravity="center_horizontal"
+                      android:background="@drawable/white_circle"
+                      android:layout_height="40dp">
+            <com.example.myapp.CircularProgress android:layout_width="20dp"
+                                                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent"
+              android:id="@+id/no_record"
+              android:layout_gravity="center"
+              android:visibility="invisible"
+              android:text="暂无记录"
+              android:layout_height="fill_parent"/>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/eee"
+              android:layout_height="match_parent">
+    <!--header-->
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/wrap_header"
+                  android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <!--detail header-->
+            <LinearLayout style="@style/detail_header">
+                <TextView style="@style/header_text" android:text="修改密码"/>
+            </LinearLayout>
+            <!--return button-->
+            <Button  style="@style/button_small"
+                     android:text="@string/back"
+                     android:id="@+id/back"
+                     android:layout_alignParentLeft="true"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/container" android:paddingTop="10dp">
+        <EditText style="@style/input_primary"
+                  android:maxLength="15"
+                  android:hint="原密码"
+                  android:id="@+id/old_pass"
+                  android:textColorHint="@color/light_gray"
+                  android:background="@drawable/input_primary"
+                  android:password="true"/>
+        <EditText android:background="@drawable/input_primary"
+                  style="@style/input_primary"
+                  android:maxLength="15"
+                  android:hint="新密码"
+                  android:id="@+id/new_pass"
+                  android:textColorHint="@color/light_gray"
+                  android:password="true"/>
+        <EditText android:background="@drawable/input_primary"
+                  style="@style/input_primary"
+                  android:maxLength="15"
+                  android:hint="重复密码"
+                  android:id="@+id/repeat_pass"
+                  android:textColorHint="@color/light_gray"
+                  android:password="true"/>
+        <Button style="@style/button_primary" android:text="确定" android:id="@+id/ok"/>
+    </LinearLayout>
+
+</LinearLayout>

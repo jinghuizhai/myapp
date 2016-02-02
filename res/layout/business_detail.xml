@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:id="@+id/business_detail"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+    <!--header-->
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/wrap_header"
+                  android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <!--detail header-->
+            <LinearLayout style="@style/detail_header">
+                <TextView style="@style/header_text" android:text="工商详情" android:id="@+id/title"/>
+            </LinearLayout>
+            <!--return button-->
+            <Button  style="@style/button_small"
+                     android:text="@string/back"
+                     android:id="@+id/back"
+                     android:layout_alignParentLeft="true"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="10dp"/>
+            <!--refresh button-->
+            <Button
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/refresh"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/refresh"
+                    android:visibility="invisible"
+                    android:background="@drawable/button_selector"
+                    style="@style/button_small"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--content-->
+    <RelativeLayout style="@style/container" android:layout_below="@id/wrap_header" android:layout_height="fill_parent" android:id="@+id/wrap">
+        <ListView android:layout_width="fill_parent"
+                  android:divider="@color/light_gray"
+                  android:dividerHeight="0.5dp"
+                  android:scrollbars="none"
+                  android:id="@+id/listview" android:layout_height="wrap_content">
+        </ListView>
+    </RelativeLayout>
+    <!--progressbar-->
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/progressBar"
+                  android:layout_marginTop="50dp"
+                  android:layout_below="@id/wrap_header"
+                  android:gravity="center"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:layout_width= "40dp"
+                      android:gravity="center"
+                      android:layout_gravity="center_horizontal"
+                      android:background="@drawable/white_circle"
+                      android:layout_height="40dp">
+            <com.example.myapp.CircularProgress android:layout_width="20dp"
+                                                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

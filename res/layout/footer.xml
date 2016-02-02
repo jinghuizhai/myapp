@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--business , accounting and tax-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@drawable/border_top"
+              android:layout_alignParentBottom="true"
+              android:paddingTop="4dp"
+              android:paddingBottom="4dp"
+              android:layout_height="50dp">
+    <LinearLayout
+            android:id="@+id/business_btn"
+            android:layout_width="fill_parent" android:orientation="vertical" android:gravity="center" android:layout_weight="1" android:layout_height="fill_parent">
+        <TextView android:text="@string/icon_business" android:textSize="26dp" android:textColor="@color/gray" android:id="@+id/icon_business" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="工商"
+                  android:textColor="@color/gray"
+                  android:textSize="12dp"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/accounting_btn"
+            android:layout_width="fill_parent" android:orientation="vertical" android:gravity="center" android:layout_weight="1" android:layout_height="fill_parent">
+        <TextView android:layout_marginTop="3dp" android:textColor="@color/gray" android:text="@string/icon_accounting" android:textSize="20dp" android:id="@+id/icon_accounting" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="记账"
+                  android:textColor="@color/gray"
+                  android:textSize="12dp"
+                  android:layout_marginTop="4dp"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/tax_btn"
+            android:layout_width="fill_parent" android:orientation="vertical" android:gravity="center" android:layout_weight="1" android:layout_height="fill_parent">
+        <TextView android:text="@string/icon_tax" android:textColor="@color/gray" android:textSize="26dp" android:id="@+id/icon_tax" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="税务"
+                  android:textColor="@color/gray"
+                  android:textSize="12dp"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

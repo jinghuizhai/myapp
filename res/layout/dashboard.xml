@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:id="@+id/dashboard_wrap">
+        <include android:id="@+id/header" layout="@layout/header" />
+        <ViewFlipper android:layout_width="wrap_content"
+                     android:id="@+id/nav"
+                     android:layout_height="match_parent">
+            <include android:id="@+id/service" layout="@layout/service"></include>
+            <include android:id="@+id/news" layout="@layout/news"></include>
+        </ViewFlipper>
+    </LinearLayout>
+    <!--menu-->
+    <!--<include layout="@layout/menu"/>-->
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/menu_below"
+                  android:visibility="invisible"
+                  android:orientation="vertical"
+                  android:layout_height="fill_parent"
+                  android:alpha="0.0"
+                  android:background="#000">
+    </LinearLayout>
+    <LinearLayout android:layout_width="300dp"
+                  android:id="@+id/menu_wrap"
+                  android:layout_marginLeft="-300dp"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical">
+        <include layout="@layout/menu"/>
+    </LinearLayout>
+</RelativeLayout>

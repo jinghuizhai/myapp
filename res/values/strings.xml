@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">myapp</string>
+    <string name="login">登录</string>
+    <string name="ok">确定</string>
+    <string name="netfail">网络状态差，请稍候再试</string>
+    <string name="slogan">米蝶财务</string>
+    <string name="back">返回</string>
+    <string name="cancle">取消</string>
+    <string name="midie">米蝶</string>
+    <string name="service">服务</string>
+    <string name="news">资讯</string>
+    <string name="phone">手机</string>
+    <string name="password">密码</string>
+    <string name="refresh">刷新</string>
+    <string name="forget">忘记密码</string>
+    <string name="message">消息</string>
+    <string name="edit">编辑</string>
+    <string name="warning_phone_not_fit">手机号码不符合要求</string>
+    <string name="warning_password_not_fit">密码至少要6个字符</string>
+    <string name="warning_sms_not_fit">验证码不符合要求</string>
+    <string name="warning_phone_wrong">没有此手机号</string>
+    <string name="warning_sms_wrong">验证码错误</string>
+
+    <string name="icon_logo">&#xe600;</string>
+    <string name="icon_tax">&#xe734;</string>
+    <string name="icon_business">&#xe62d;</string>
+    <string name="icon_accounting">&#xe62e;</string>
+    <string name="icon_money">&#xe651;</string>
+    <string name="icon_search">&#xe612;</string>
+    <string name="icon_home">&#xe60c;</string>
+    <string name="icon_success">&#xe610;</string>
+    <string name="icon_logout">&#xe698;</string>
+    <string name="icon_edit">&#xe625;</string>
+    <string name="icon_company">&#xe613;</string>
+    <string name="icon_back">&#xe634;</string>
+    <string name="icon_date">&#xe61b;</string>
+    <string name="icon_menu">&#xe605;</string>
+    <string name="icon_msg">&#xe62a;</string>
+
+    <color name="white">#fff</color>
+    <color name="black">#888</color>
+    <color name="gray">#999</color>
+    <color name="eee">#eee</color>
+    <color name="light_gray">#eee</color>
+    <color name="blue">#3385ff</color>
+    <color name="light_blue">#66c1ff</color>
+    <color name="lighter_blue">#2892fc</color>
+    <color name="dark_blue">#2d78f4</color>
+    <color name="darker_blue">#0059b3</color>
+    <color name="border_bottom">#dcdcdc</color>
+    <color name="dark_gray">#dcdcdc</color>
+    <color name="sky">#6db5cd</color>
+</resources>

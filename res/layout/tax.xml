@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/tax"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50dp">
+            <Spinner
+                    android:id="@+id/year_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:spinnerMode="dropdown"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:entries="@array/year"
+            />
+            <Spinner
+                    android:id="@+id/month_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:entries="@array/month"
+            />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+                      android:orientation="horizontal"
+                      android:id="@+id/count_wrap"
+                      android:background="@drawable/border_gray_1dp"
+                      android:layout_height="50dp">
+            <TextView android:layout_width="fill_parent"
+                      android:id="@+id/nation"
+                      android:gravity="center"
+                      android:background="@color/white"
+                      android:textColor="@color/blue"
+                      android:layout_weight="1"
+                      android:layout_height="fill_parent"/>
+            <TextView android:layout_width="fill_parent"
+                      android:id="@+id/local"
+                      android:gravity="center"
+                      android:background="@drawable/border_left"
+                      android:textColor="@color/blue"
+                      android:layout_weight="1"
+                      android:layout_height="fill_parent"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@+id/listview"
+                      android:divider="@color/light_gray"
+                      android:dividerHeight="1dp"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent">
+            </ListView>
+            <TextView android:visibility="invisible"
+                      android:id="@+id/no_data"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="暂无记录"
+                      android:textColor="@color/gray"
+                      android:gravity="center"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:id="@+id/progressBar"
+                  android:layout_marginTop="-50dp"
+                  android:layout_alignParentTop="true"
+                  android:gravity="center"
+                  android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="40dp"
+                      android:gravity="center"
+                      android:layout_gravity="center_horizontal"
+                      android:background="@drawable/white_circle"
+                      android:layout_height="40dp">
+            <com.example.myapp.CircularProgress android:layout_width="20dp"
+                                                android:layout_height="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

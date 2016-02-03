@@ -39,10 +39,16 @@
                       android:background="@drawable/border_bottom"
                       android:visibility="invisible"
                       android:layout_height="80dp">
-            <TextView android:layout_width="wrap_content"
-                      android:text="工商注册"
-                      android:layout_marginBottom="10dp"
-                      android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="wrap_content"
+                          android:text="工商注册"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="查看详细"
+                          android:textColor="@color/light_gray"
+                          android:layout_marginLeft="10dp"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
         </LinearLayout>
         <!--change-->
         <LinearLayout android:layout_width="fill_parent"
@@ -52,10 +58,16 @@
                       android:visibility="invisible"
                       android:id="@+id/business_change"
                       android:layout_height="80dp">
-            <TextView android:layout_width="wrap_content"
-                      android:text="工商变更"
-                      android:layout_marginBottom="10dp"
-                      android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="wrap_content"
+                          android:text="工商变更"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="查看详细"
+                          android:textColor="@color/light_gray"
+                          android:layout_marginLeft="10dp"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
         </LinearLayout>
         <!--logout-->
         <LinearLayout android:layout_width="fill_parent"
@@ -65,10 +77,16 @@
                       android:id="@+id/business_logout"
                       android:visibility="invisible"
                       android:layout_height="80dp">
-            <TextView android:layout_width="wrap_content"
-                      android:text="工商注销"
-                      android:layout_marginBottom="10dp"
-                      android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                <TextView android:layout_width="wrap_content"
+                          android:text="工商注销"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:text="查看详细"
+                          android:textColor="@color/light_gray"
+                          android:layout_marginLeft="10dp"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout android:layout_width="fill_parent"

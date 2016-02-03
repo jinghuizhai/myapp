@@ -1,6 +1,7 @@
 package com.example.myapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -73,7 +74,19 @@ public class AccountingFragment extends RichFragment{
         };
     }
 
-    //�л���֧����¼
+    private void phoneRegister(){
+        phone.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                String phoneNum = phone.getText().toString();
+                if(Util.validate("phone",phoneNum)){
+                    Intent intent = new Intent(Intent.ACTION_CALL);
+                    intent.setData(Uri.parse("tel:"+phoneNum));
+                    self.startActivity(intent);
+                }
+            }
+        });
+    }
+
     private void toPayRecord(){
         Intent intent = new Intent();
         intent.setClass(this.getActivity(),PayrecordActivity.class);
@@ -97,6 +110,7 @@ public class AccountingFragment extends RichFragment{
         progressbarGestureListener.setFragment(self);
         progressbarGestureListener.show();
         gestureDetector = new GestureDetector(this.getActivity(),progressbarGestureListener);
+        phoneRegister();
         initHandler();
         progressbarGestureListener.show();
         requestData();

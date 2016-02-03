@@ -1,6 +1,7 @@
 package com.example.myapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Message;
 import android.util.DisplayMetrics;
@@ -34,6 +35,7 @@ public class BusinessFragment extends RichFragment{
         initHandler();
         employee = (TextView)view.findViewById(R.id.employee);
         phone = (TextView)view.findViewById(R.id.phone);
+        phoneRegister();
         LinearLayout progressBar = (LinearLayout)view.findViewById(R.id.progressBar);
         progressbarGestureListener = new ProgressbarGestureListener();
         progressbarGestureListener.setView(progressBar);
@@ -43,7 +45,18 @@ public class BusinessFragment extends RichFragment{
         requestData();
         return view;
     }
-
+    private void phoneRegister(){
+        phone.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view) {
+                String phoneNum = phone.getText().toString();
+                if(Util.validate("phone",phoneNum)){
+                    Intent intent = new Intent(Intent.ACTION_CALL);
+                    intent.setData(Uri.parse("tel:"+phoneNum));
+                    self.startActivity(intent);
+                }
+            }
+        });
+    }
     public void onTouchEvent(MotionEvent event) {
         gestureDetector.onTouchEvent(event);
         progressbarGestureListener.onTouch(event);

@@ -35,7 +35,7 @@ public class Util {
     }
     public static boolean validate(String model,String str){
         if(model.equals("phone")){
-            Pattern pt = Pattern.compile("(^1[3458][0-9]{9}$)");
+            Pattern pt = Pattern.compile("(^1[358][0-9]{9}$)");
             Matcher mt = pt.matcher(str);
             if(mt.find()){
                 return true;

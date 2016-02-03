@@ -114,14 +114,14 @@ public class DashboardActivity extends Activity {
         if(!company.equals("")){
             this.company.setText(company);
         }
-        //定时检查消息更新
-        startService();
         //修改密码和登出
         modifyRegister();
         logoutRegister();
         //检查版本更新
         VersionUpdate versionUpdate = new VersionUpdate(self);
         versionUpdate.checkVersion();
+        //定时检查消息更新
+        startService();
     }
 
     private void addFragmentListener(Fragment ftl){

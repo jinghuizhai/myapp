@@ -120,6 +120,8 @@ public class Request{
                 httpPost.setEntity(requestHttpEntity);
                 if(!Session.getData("cookie").equals("")){
                     httpPost.setHeader("Cookie","PHPSESSID="+Session.getData("cookie"));
+                }else{
+                    httpPost.setHeader("Cookie","PHPSESSID="+clientCoookie);
                 }
                 httpClient = new DefaultHttpClient();
                 HttpResponse response = httpClient.execute(httpPost);
